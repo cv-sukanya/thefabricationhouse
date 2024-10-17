@@ -2534,7 +2534,7 @@ a:focus {
 }
 .contact_holder .contact_left{
 	width: 40%;
-	background-color: #0d0e13;
+	background-color: #EFF4F7;
 	border-radius: 5px;
 	overflow: hidden;
 }
@@ -9217,7 +9217,7 @@ blockquote{
 	float: left;
 	clear: both;
 	padding: 34px 30px;
-	background-color: #0d0e13;
+	background-color: #EFF4F7;
 	line-height: 1.5;
 }
 .fn_cs_location_list .content_holder ul{

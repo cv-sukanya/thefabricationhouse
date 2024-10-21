@@ -1571,10 +1571,13 @@ a:focus {
 	font-weight: 500;
 	box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
 	font-family: 'Rubik';
+	cursor: pointer;
+	border: 2px solid;
 }
 .industify_fn_widget_estimate .bfwe_inner a:hover{
-	background-color: #111422;
+	background-color: #300165;
 	color: #fff;
+	border: 1px solid;
 }
 .widget_block{
 	width: 100%;
@@ -7294,7 +7297,9 @@ blockquote{
 	background-color: #300165ef;
 
 }
-
+.fn_cs_introduce span a{
+	
+}
 .fn_cs_introduce span.video:after{
 	content: 'More';
 	position: absolute;
@@ -8206,10 +8211,13 @@ blockquote{
 .fn_cs_button.full a{
 	display: block;
 	line-height: 70px;
-	background-color: #45a2df;
+	background-color: #300165;
+	color: #fff;
 }
 .fn_cs_button.full a:hover{
-	background-color: #300165;
+	background-color: transparent;
+	color: #300165;
+	border: 1px solid;
 }
 /*------------------------------------------------------------------*/
 /*	Shortcode #24 Sixfold Gallery
@@ -8302,10 +8310,12 @@ blockquote{
 
 /* Spacing */
 .section_1{
-	background-color: #16161B;
+	/* background-color: #16161B; */
+	background-color: rgba(114, 118, 139, .16);
 }
 .section_1 .fn_cs_description p{
 	color: #999;
+	text-align: center;
 }
 /*------------------------------------------------------------------*/
 /*	Shortcode #25 Counter with Caption
@@ -8619,9 +8629,10 @@ blockquote{
 	position: relative;
 	border-radius: 4px;
 	overflow: hidden;
-	background-color: #19191e;
-	margin-top: 25px;
-	border: 1px solid rgba(255,255,255,.1);
+	/* background-color: #19191e; */
+	margin-top: -325px;
+	z-index: 5;
+	/* border: 1px solid rgba(255,255,255,.1); */
 }
 .fn_cs_swiper__navigation .myprev-button{
 	width: 120px;
@@ -8631,7 +8642,7 @@ blockquote{
 	top: 0;
 	left: 0;
 	cursor: pointer;
-	border-right: 1px solid rgba(255,255,255,.1);
+	/* border-right: 1px solid rgba(255,255,255,.1); */
 }
 .fn_cs_swiper__navigation .myprev-button:after{
 	border: solid #666;
@@ -8654,7 +8665,7 @@ blockquote{
 	top: 0;
 	right: 0;
 	cursor: pointer;
-	border-left: 1px solid rgba(255,255,255,.1);
+	/* border-left: 1px solid rgba(255,255,255,.1); */
 }
 .fn_cs_swiper__navigation .mynext-button:after{
 	border: solid #666;

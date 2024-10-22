@@ -4438,7 +4438,7 @@ blockquote{
 	
 }
 .fn_cs_service_query .owl_control .more-btn:hover{
-	background-color: #300165ef;
+	background-color: transparent;
 	border-color: #fff;
 	color: #fff;
 	/* padding: 0 5px; */
@@ -4542,6 +4542,7 @@ blockquote{
 	.fn_cs_service_query .owl_control .more-btn{
 		margin: -10px 0 -50px 0;
 	}
+	
 }
 /*------------------------------------------------------------------*/
 /*	Shortcode #5 ABOUT with RATING
@@ -5359,18 +5360,74 @@ blockquote{
 /*------------------------------------------------------------------*/
 /*	Shortcode #9 MAIN TITLE
 /*------------------------------------------------------------------*/
-.fn_cs_main_title{
+
+
+.blog_section .fn_cs_main_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	z-index:5;
+}
+
+.blog_section .fn_cs_main_title .btn {
+    padding: 10px 20px;
+    background-color: #300165;
+    color: white;
+    border: 2px solid;
+    border-radius: 2px;
+    cursor: pointer;
+	margin-top: 30px;
+
+	/* z-index: 5; */
+}
+
+.blog_section .fn_cs_main_title .btn:hover {
+    background-color: transparent;
+	color: #300165;
+	border: 2px solid;
+	border-color: #300165;
+	color: #300165;
+}
+.blog_section .fn_cs_main_title .btn a{
+	color: #fff;
+	text-decoration: none;
+	font-weight: 500;
+	font-family: 'Rubik';
+    text-transform: uppercase;
+	letter-spacing: .5px;
+}
+.blog_section .fn_cs_main_title .btn a:hover{
+	color: #300165;
+	text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .fn_cs_main_title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .fn_cs_main_title .btn {
+        margin-top: 10px;
+        align-self: flex-end;
+    }
+}
+
+
+/* --------------------------------- */
+
+/* .fn_cs_main_title{
 	width: 100%;
 	float: left;
 	clear: both;
 	position: relative;
-}
+} */
 .fn_cs_main_title .title_holder{
 	width: 100%;
 	float: left;
 	clear: both;
 	position: relative;
-	max-width: 400px;
+	max-width: 1000px;
 }
 .fn_cs_main_title .title_holder h3{
 	margin: 0px;
@@ -5394,6 +5451,46 @@ blockquote{
     width: 100px;
     height: 3px;
     background-color: #300165;
+}
+.fn_cs_main_title .title_holder .owl_control{
+	position: absolute;
+	right: 0px;
+	top: 5px;
+}
+.fn_cs_main_title .title_holder .owl_control .more-btn{
+	color: #000;
+	background-color: #fff;
+	cursor: pointer;
+	border-radius: 2px;
+	padding: 0 10px;
+	
+}
+.fn_cs_main_title .title_holder .owl_control .more-btn:hover{
+	background-color: transparent;
+	border-color: #fff;
+	color: #fff;
+	/* padding: 0 5px; */
+	border-style: dotted;
+	border: 1px solid #fff;
+	border-radius: 2px;
+	font-weight: 500;
+}
+.fn_cs_main_title .title_holder .owl_control .more-btn a{
+	text-decoration: none;
+	cursor: pointer;
+	padding: 0 2px;
+	color: #300165;
+	font-size: 14px;
+    line-height: 50px;
+    padding: 0px 30px;
+    font-family: 'Rubik';
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+.fn_cs_main_title .title_holder .owl_control .more-btn a:hover{
+	color: #fff;
+	font-weight: 500;
 }
 @media(max-width: 1200px){
 	.fn_cs_main_title .title_holder h3{
@@ -5552,10 +5649,11 @@ blockquote{
 	position: relative;
 }
 .fn_cs_triple_blog_modern .t_header a{
-	color: #45a2df;
+	color: #252525;
 	text-decoration: none;
 	text-transform: capitalize;
-	border-bottom: 1px solid #45a2df;
+	border-bottom: 1px solid #252525;
+	font-weight: 600;
 }
 .fn_cs_triple_blog_modern .t_header a:hover{
 	border-bottom-color: transparent;
@@ -5574,7 +5672,7 @@ blockquote{
 	color: #041230;
 }
 .fn_cs_triple_blog_modern .title_holder h3 a:hover{
-	color: #45a2df
+	color: #300165;
 }
 .fn_cs_triple_blog_modern .t_footer{
 	margin: 0;
@@ -8635,7 +8733,7 @@ blockquote{
 	/* border: 1px solid rgba(255,255,255,.1); */
 }
 .fn_cs_swiper__navigation .myprev-button{
-	width: 120px;
+	width: 30px;
 	height: 100%;
 	position: absolute;
 	display: block;
@@ -8658,7 +8756,7 @@ blockquote{
 	margin: -8px 0 0 -2px;
 }
 .fn_cs_swiper__navigation .mynext-button{
-	width: 120px;
+	width: 30px;
 	height: 100%;
 	position: absolute;
 	display: block;

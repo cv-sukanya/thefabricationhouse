@@ -6336,10 +6336,11 @@ blockquote{
 	min-width: -moz-max-content;
 	min-width: -webkit-max-content;
 	text-transform: uppercase;
-	font-size: 16px;
+	font-size: 20px;
 	letter-spacing: 1px;
 	color: #eee;
-	padding-left: 45px;
+	/* padding-left: 45px; */
+	padding-left: 80px;
 	position: relative;
 	top: 1px;
     line-height: 1;
@@ -6347,7 +6348,8 @@ blockquote{
 .fn_cs_info_rating .tagline_holder span:after{
 	position: absolute;
 	content: '';
-	left: 15px;
+	/* left: 15px; */
+	left: 40px;
 	top: 6px;
 	width: 20px;
 	height: 1px;
@@ -7534,6 +7536,8 @@ blockquote{
 	flex-direction: column;
 	height: 100%;
 }
+
+
 .fn_cs_services_classic .icon{
 	display: block;
 	position: relative;
@@ -7561,6 +7565,7 @@ blockquote{
 	margin: 0px;
 	padding: 0px;
 	margin-bottom: 30px;
+	
 }
 .fn_cs_services_classic .more_details{
 	display: block;
